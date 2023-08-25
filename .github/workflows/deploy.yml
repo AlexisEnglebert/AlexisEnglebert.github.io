@@ -25,8 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: cargo-ghp-upload
-        run: cargo install cargo-ghp-upload
+      - name: build
+        run: cargo build
 
-      - name: deploy
-        run: cargo ghp-upload -vv
+      - name: run
+        run: cargo run
