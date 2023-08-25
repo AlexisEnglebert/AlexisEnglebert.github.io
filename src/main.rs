@@ -81,9 +81,6 @@ fn base(content: Markup) -> Markup {
 #[get("/")]
 fn index() -> Markup {
 	base(html! {
-		.container {
-			(include_md!("/md/index.md"))
-		}
 		.balloon {
 			// shaders
 
@@ -98,6 +95,10 @@ fn index() -> Markup {
 
 			canvas #balloon width="400px" height="500px";
 			script src="/public/balloon/balloon.js" defer {}
+		}
+		
+		.container {
+			(include_md!("/md/index.md"))
 		}
 	})
 }
