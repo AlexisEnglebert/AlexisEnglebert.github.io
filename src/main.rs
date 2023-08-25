@@ -1,5 +1,4 @@
 #![allow(macro_expanded_macro_exports_accessed_by_absolute_paths)]
-#![feature(decl_macro)]
 
 #[macro_use] extern crate rocket;
 extern crate maud;
